@@ -25,7 +25,7 @@ h2 {
     color: #6D5EF8;
     text-align: center;
     padding-bottom: 40px;
-    margin-bottom: 60px;
+    margin-bottom: auto;
 }
 
 .container {
@@ -41,7 +41,7 @@ h2 {
     align-items: center;
     padding: 15px 20px;
     background: #F6F4EA;
-    border-bottom: 1px solid #1b1b1b;
+    border-bottom: 2px solid #6D5EF8;
 }
 
 .logo {
@@ -60,7 +60,7 @@ h2 {
 }
 
 .nav-links a:hover {
-    color: white;
+    color: #a855f7;
 }
 
 /* HERO */
@@ -216,14 +216,14 @@ h2 {
 }
 
 .card {
-    background: #1A173D;
     padding: 20px;
     border-radius: 10px;
-    color: #ccc;
+    color: #231F52;
+    border: 2px solid #6D5EF8;
 }
 
 .card.highlight {
-    border: 1px solid #6D5EF8;
+    border: 3px solid #6D5EF8;
     box-shadow: 0 0 30px #6D5EF8;
 }
 .card h3 {
@@ -232,8 +232,7 @@ h2 {
 
 /* STATS */
 .stats h2 {
-    margin-bottom: 1px;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .stats-container {
@@ -244,7 +243,7 @@ h2 {
 }
 
 .stats-container h3 {
-    color: #6D5EF8;
+    color: #a855f7;
 }
 
 .stat {
@@ -276,15 +275,37 @@ h2 {
 /*CTA*/
 .cta {
     text-align: center;
-    padding: 80px 20px;
+    padding: 70px 20px;
+    padding-top: 0;
+    background: radial-gradient(circle at center, rgba(109, 94, 248 ,0.15), transparent 70%);
 }
 
 .cta h2 {
-    margin-bottom: 10px;
+    margin-bottom: auto;
+    font-size: 32px;
+}
+
+.cta-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto 40px;
+	max-width: 500px;
+}
+
+.cta-list li {
+	margin: 18px 0;
+	color: #231F52;
+	font-size: 18px;
+	position: relative;
+}
+
+.cta-list li::before {
+	content: "✔";
+	color: #6D5EF8;
+	margin-left: 10px;
 }
 
 .cta p {
-    color: #231F52;
     margin-bottom: 25px;
 }
 
@@ -299,9 +320,21 @@ h2 {
     transition: 0.3s;
 }
 
+.whatsAppBtn{
+	padding: 15px 30px;
+	border: 2px solid #6D5EF8;
+	border-radius: 8px;
+}
+
 /*hover*/
+
 .cta-btn:hover {
-    box-shadow: 0 0 20px #EB5B09;
+    box-shadow: 0 0 20px #6D5EF8;
+    transform: translatey(-2px);
+}
+
+.whatsAppBtn:hover {
+    box-shadow: 0 0 20px #6D5EF8;
     transform: translatey(-2px);
 }
 
@@ -314,6 +347,39 @@ h2 {
     margin-top: 0 10px;
     color: #6D5EF8;
     text-decoration: none;
+}
+
+.about-me {
+	justify-content: center;
+}
+
+.quote-box {
+	position: relative;
+	max-width: 700px;
+	margin: auto;
+	padding: 20px;
+	border-radius: 16px;
+	line-height: 2;
+	color: #231F52;
+	box-shadow: 0 0 20px rgba(109, 94, 248, 0.2);
+}
+
+.quote-top {
+	position: absolute;
+	top: -45px;
+	left: 0px;
+	font-size: 100px;
+	color: #6D5EF8;
+	opacity: 0.3;
+}
+
+.quote-bottom {
+	position: absolute;
+	bottom: -110px;
+	font-size: 100px;
+	right: 0px;
+	color: #6D5EF8;
+	opacity: 0.3;
 }
 
 .image-modal {
