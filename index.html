@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>portfolio</title>
+    <title>Ayoub portfolio</title>
+    <meta name="description" content="ايوب - مصمم منشورات بيعية احترافية">
+    <meta icon="3.jpg">
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -26,7 +28,7 @@
             <h1>هلا انا <span>ايوب</span>، احول حسابك إلى متجر يبيع وليس مجرد حساب يشاهد</h1>
         </div>
         <div class="about-picture">
-            <img src="3.jpg" alt="profile">
+            <img src="3.jpg" alt="profile" loading="lazy">
         </div>
     </div>
 </header>
@@ -34,7 +36,7 @@
 <main class="container">
 
 <section>
-    <h2>عندك متابعين لكن المبيعات ضعيفة؟</h2>
+    <h2 class="reveal">عندك متابعين لكن المبيعات ضعيفة؟</h2>
     <h3>السبب غالبا:</h3>
     <ul class="pain-list">
         <li>المنتجات غير واضحة</li>
@@ -53,24 +55,38 @@
 <div class="section-divider"></div>
 
 <section id="my-work">
-    <h2>أخر اعمالي</h2>
-
-    <div class="work-samples">
-        <img src="img1.jpeg" alt="">
-        <img src="img2.jpeg" alt="">
-        <img src="img3.jpeg" alt="">
-        <img src="img4.jpeg" alt="">
-        <img src="img5.jpeg" alt="">
-        <img src="img6.jpeg" alt="">
+    <h2 class="reveal">أخر اعمالي</h2>
+    <div class= "work-samples-wrapper reveal">
+	    <div class="work-samples">
+		    <img src="img1.jpeg" alt="" loading="lazy">
+		    <img src="img2.jpeg" alt="" loading="lazy">
+		    <img src="img3.jpeg" alt="" loading="lazy">
+		    <img src="img4.jpeg" alt="" loading="lazy">
+		    <img src="img5.jpeg" alt="" loading="lazy">
+		    <img src="img6.jpeg" alt="" loading="lazy">
+		    <img src="img1.jpeg" alt="" loading="lazy">
+		    <img src="img2.jpeg" alt="" loading="lazy">
+		    <img src="img3.jpeg" alt="" loading="lazy">
+		    <img src="img4.jpeg" alt="" loading="lazy">
+		    <img src="img5.jpeg" alt="" loading="lazy">
+		    <img src="img6.jpeg" alt="" loading="lazy">
+		    <img src="img1.jpeg" alt="" loading="lazy">
+		    <img src="img2.jpeg" alt="" loading="lazy">
+		    <img src="img3.jpeg" alt="" loading="lazy">
+		    <img src="img4.jpeg" alt="" loading="lazy">
+		    <img src="img5.jpeg" alt="" loading="lazy">
+		    <img src="img6.jpeg" alt="" loading="lazy">
+	    </div>
     </div>
+    <p class="work-hint">اضغط على أي صورة لعرضها وعرض المزيد → ←</p>
 </section>
 
 <div class="section-divider"></div>
 
 <section id="testimonials" class="testimonials">
-    <h2>ماذا يقول عملاؤنا؟</h2>
+    <h2 class="reveal">ماذا يقول عملاؤنا؟</h2>
 
-    <div class="slider">
+    <div class="slider reveal">
         <div class="slides">
 
             <div class="slide active">
@@ -100,20 +116,20 @@
 <div class="section-divider"></div>
 
 <section id="worth" class="value">
-    <h2>لماذا هذه الخدمة مهمة لك؟</h2>
+    <h2 class="reveal">لماذا هذه الخدمة مهمة لك؟</h2>
     <div class="cards-container">
         <div class="worth">
-            <div class="card">
+            <div class="card reveal reveal-delay-1">
                 <h3>ليست هدفًا</h3>
                 <p>التصميم لا يضمن البيع</p>
             </div>
             
-            <div class="card highlight">
+            <div class="card highlight reveal reveal-delay-2">
                 <h3>بل وسيلة</h3>
                 <p>لزيادة فرصة الشراء</p>
             </div>
             
-            <div class="card">
+            <div class="card reveal reveal-delay-3">
                 <h3>النتيجة</h3>
                 <p>استغلال المشاهدات بدل خسارتها</p>
             </div>
@@ -123,20 +139,20 @@
 
 
 <section class="stats">
-    <h2>نتائج حقيقية من العملاء</h2>
+    <h2 class="reveal">نتائج حقيقية من العملاء</h2>
 
     <div class="stats-container">
-        <div class="stat">
+        <div class="stat reveal reveal-delay-2">
             <h3>+1,200</h3>
             <p>عملية شراء تمت عبر التصاميم</p>
         </div>
 
-        <div class="stat highlight">
+        <div class="stat highlight reveal reveal-delay-1">
             <h3>x3.4</h3>
             <p>متوسط الارباح المحققة للعملاء</p>
         </div>
 
-        <div class="stat">
+        <div class="stat reveal reveal-delay-3">
             <h3>+45</h3>
             <p>عميل تم خدمته</p>
         </div>
@@ -146,18 +162,18 @@
 <div class="section-divider"></div>
 
 <section id="cta" class="cta">
-	<h2>ابدأ الآن <u style="color: #a855f7;">مجانًا</u> واحصل على</h2>
-	<ul class="cta-list">
+	<h2 class="reveal">ابدأ الآن <u class="reveal reveal-delay-1" style="color: #a855f7;">مجانًا</u> واحصل على</h2>
+	<ul class="cta-list reveal reveal-delay-1">
 		<li>أول 3 منشورات مجانًا لأول 3 أشخاص فقط</li>
 		<li>ملاحظات لتحسين عرض المنتجات</li>
 		<li>مثال عملي لكيف يمكن أن يبدو حسابك بشكل احترافي</li>
 	</ul>
 
     <p>راسلني مباشرة وسنبدأ فورًا</p>
-    <a href="https://t.me/A_E_A_P?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A8%D8%AF%D8%A1%20%D8%A8%D8%B9%D8%B1%D8%B6%203%20%D9%85%D9%86%D8%B4%D9%88%D8%B1%D8%A7%D8%AA%20%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9" class="cta-btn" target="_blank">تواصل عبر تيليغرام</a>
+    <a href="https://t.me/A_E_A_P?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A8%D8%AF%D8%A1%20%D8%A8%D8%B9%D8%B1%D8%B6%203%20%D9%85%D9%86%D8%B4%D9%88%D8%B1%D8%A7%D8%AA%20%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9" class="cta-btn reveal reveal-delay-2" target="_blank">تواصل عبر تيليغرام</a>
     <p class="alt">او اختر منصة اخرى</p>
     <div class="socials">
-        <a href="https://wa.me/9647716454728?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A8%D8%AF%D8%A1%20%D8%A8%D8%B9%D8%B1%D8%B6%203%20%D9%85%D9%86%D8%B4%D9%88%D8%B1%D8%A7%D8%AA%20%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9" class="whatsAppBtn">واتساب</a>
+        <a href="https://wa.me/9647716454728?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A8%D8%AF%D8%A1%20%D8%A8%D8%B9%D8%B1%D8%B6%203%20%D9%85%D9%86%D8%B4%D9%88%D8%B1%D8%A7%D8%AA%20%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9" class="whatsAppBtn reveal reveal-delay-3">واتساب</a>
     </div>
 </section>
 
@@ -166,9 +182,9 @@
 
 
 <section class="about-me" id="about-me">
-	<h2>نبذة عني</h2>
+	<h2 class="reveal">نبذة عني</h2>
 
-	<div class="quote-box">
+	<div class="quote-box reveal">
 
 		<span class="quote-top">“</span>
 

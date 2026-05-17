@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -13,6 +17,27 @@
   src: url('Hacen-Algeria-Hd.ttf') format('truetype');
   font-weight: 700;
 }
+
+
+/* Base hidden state for all animated elements */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* When element enters viewport */
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger delays for groups like cards and images */
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
 
 body {
     margin: 0;
@@ -70,6 +95,17 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: heroEnter 0.8s ease forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes heroEnter {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .about-picture img {
@@ -121,10 +157,32 @@ h2 {
 }
 
 /* WORK GRID */
+.work-samples-wrapper {
+	position: relative;
+	cursor: pointer;
+    	overflow: visible;;
+
+}
+
+.work-samples-wrapper::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 120px;
+	background: linear-gradient(to bottom, transparent, #F6F4EA);
+	pointer-events: none;
+	z-index: 2;
+}
+
 .work-samples {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+/*    grid-template-columns: repeat(3, 1fr));*/
     gap: 10px;
+    max-height: 750px;
+    clip-path: inset(-20px -20px 1px -20px);
 }
 
 .work-samples img {
@@ -137,6 +195,14 @@ h2 {
 .work-samples img:hover {
 	transform: scale(1.03);
 	box-shadow: 0 0 20px #6D5EF8;
+}
+
+.work-hint {
+	text-align: center;
+	color: #6D5EF8;
+	font-size: 14px;
+	margin-top: 10px;
+	opacity: 0.8;
 }
 
 /* TESTIMONIALS */
@@ -160,7 +226,6 @@ h2 {
 
 .slide {
     min-width: 100%;
-    margin 0 5px;
     padding: 25px;
     background: #1A173D;
     border-radius: 10px;
@@ -176,8 +241,7 @@ h2 {
 .slide.active {
     opacity: 1;
     transform: scale(1);
-    border: 2px solid #6D5EF8
-    border: 2px solid #6D5EF8;;
+    border: 1px solid #6D5EF8;
     box-shadow: 0 0 13px #6D5EF8;
 }
 
@@ -339,7 +403,7 @@ h2 {
 }
 
 .alt {
-    margin-top: 30;
+    margin-top: 30px;
     color: #888;
 }
 
@@ -407,7 +471,7 @@ h2 {
 @keyframes fade {
 	from {
 		opacity: 0;
-		transform: scale(o.95);
+		transform: scale(0.95);
 	}
 	to {
 		opacity: 1;
@@ -470,5 +534,12 @@ h2 {
     .section-divider {
 	    width: 99%;
 	    height: 1px;
+    }
+}
+
+@media (min-width: 601px) {
+    .work-samples {
+        grid-template-columns: repeat(5, 1fr);
+        max-height: 340px; /* shows 2 rows */
     }
 }
