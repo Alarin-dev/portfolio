@@ -135,8 +135,8 @@ function animateCounter(el, target, prefix = '', suffix = '') {
 }
 
 const statsData = [
-    { selector: '.stats-container .stat:nth-child(1) h3', target: 1200, prefix: '+' },
-    { selector: '.stats-container .stat:nth-child(2) h3', target: 3.4,  prefix: 'x' },
+    { selector: '.stats-container .stat:nth-child(1) h3', target: 130, prefix: '+' },
+    { selector: '.stats-container .stat:nth-child(2) h3', target: 1.5,  prefix: '+' },
     { selector: '.stats-container .stat:nth-child(3) h3', target: 45,   prefix: '+' },
 ];
 
